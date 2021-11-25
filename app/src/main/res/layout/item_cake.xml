@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_20dp"
+    android:layout_marginTop="@dimen/_10dp"
+    android:layout_marginRight="@dimen/_20dp"
+    android:layout_marginBottom="@dimen/_10dp"
+    android:background="@drawable/background_item">
+
+    <ImageView
+        android:id="@+id/IvItemImage"
+        android:layout_width="127dp"
+        android:layout_height="143dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:contentDescription="@string/image_view"
+        android:scaleType="centerCrop"
+        android:src="@drawable/popcorn" />
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/CvItemImage"-->
+<!--        android:layout_width="@dimen/_150dp"-->
+<!--        android:layout_height="@dimen/_150dp"-->
+<!--        android:layout_marginStart="@dimen/_15dp"-->
+<!--        android:layout_marginTop="@dimen/_10dp"-->
+<!--        android:layout_marginEnd="5dp"-->
+<!--        android:layout_marginRight="@dimen/_10dp"-->
+<!--        android:layout_marginBottom="@dimen/_10dp"-->
+<!--        android:elevation="@dimen/_10dp"-->
+<!--        app:cardCornerRadius="@dimen/_15dp">-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <TextView
+        android:id="@+id/TvItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/IvItemImage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@+id/IvItemImage"
+        android:text="@string/popcorn_caramello"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvItemTitle"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@+id/IvItemImage"
+        android:text="@string/rp_468_000"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>

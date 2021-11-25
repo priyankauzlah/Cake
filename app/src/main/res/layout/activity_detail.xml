@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/main_pink"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/IvItemDetail"
+        android:layout_width="418dp"
+        android:layout_height="418dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chocolate_amber" />
+
+    <TextView
+        android:id="@+id/TvItemDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_10dp"
+        android:text="@string/popcorn_caramello"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IvItemDetail" />
+
+    <TextView
+        android:id="@+id/TvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/rp_468_000"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/TvItemDetail"
+        app:layout_constraintTop_toBottomOf="@+id/TvItemDetail" />
+
+    <TextView
+        android:id="@+id/TvDesc"
+        android:layout_width="316dp"
+        android:layout_height="189dp"
+        android:layout_marginTop="@dimen/_5dp"
+        android:text="@string/desc_1"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_marginEnd="@dimen/_5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TvPrice"
+        app:layout_constraintTop_toBottomOf="@+id/TvPrice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
